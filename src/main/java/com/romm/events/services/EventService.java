@@ -19,7 +19,7 @@ public class EventService {
         return eventRepository.findAll();
     }
 
-    public Event saveEvent(@RequestBody Event event) {
+    public Event saveEvent(Event event) {
         return eventRepository.saveAndFlush(event);
     }
 }
