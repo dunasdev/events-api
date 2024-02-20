@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
 
 @Entity
@@ -15,6 +16,9 @@ public class Event {
     @NotBlank
     private String title;
     private String description;
+
+    @ManyToOne()
+    private User user;
 
     
     public Long getId() {
@@ -34,6 +38,12 @@ public class Event {
     }
     public void setDescription(String description) {
         this.description = description;
+    }
+    public User getUser() {
+        return user;
+    }
+    public void setUser(User user) {
+        this.user = user;
     }
 
     

@@ -2,4 +2,9 @@
 
 ### Case study on event indexing
 
-Using this for learning about authentication/authorization.
+This app lets you index information about events and link them with certain subjects.
+
+Using this project primarly for playing with authentication/authorization.
+
+### Class diagram
+![](docs/cd.png)

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.romm.events.repository.EventRepository;
 import com.romm.events.entities.Event;
+import com.romm.events.entities.User;
 
 @Service
 public class EventService {
@@ -20,5 +21,9 @@ public class EventService {
 
     public Event saveEvent(Event event) {
         return eventRepository.saveAndFlush(event);
+    }
+
+    public List<Event> getUserEvents(User user) {
+        return eventRepository.findAllByUser(user);
     }
 }
