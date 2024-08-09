@@ -1,10 +1,18 @@
-# events
+# events-api
+![](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 
-### Case study on event indexing
+### Como rodar:
 
-This app lets you index information about events and link them with certain subjects.
+Tendo instalado o JDK 17+, na pasta raiz do projeto use o comando:
 
-Using this project primarly for playing with authentication/authorization.
+    ./mvnw spring-book:run
+
+### Dependências
+
+- H2: Banco de dados em memória
+- Lombok: anotações para getters/setters, construtores..
+- JPA: ORM
+- DevTools: Refresh automático e utilidades para desenvolvimento
 
 ### Class diagram
 ![](docs/cd.png)
